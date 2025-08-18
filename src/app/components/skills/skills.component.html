@@ -1,0 +1,68 @@
+<section id="skills" class="section-padding bg-white dark:bg-gray-900">
+      <div class="container-custom">
+        <div class="text-center mb-10">
+          <h2 class="section-title text-4xl lg:text-5xl font-display font-bold text-gray-900 dark:text-white mb-6">Skills & <span class="text-gradient">Technologies</span></h2>
+          <p class="section-subtitle text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">The tools and technologies I use to bring ideas to life</p>
+        </div>
+
+        <!-- Skills Categories -->
+        <!-- <div class="skills-categories mb-8">
+          <div class="flex flex-wrap justify-center gap-4">
+            <button *ngFor="let category of categories" (click)="setActiveCategory(category)" [class]="activeCategory === category ? 'btn-primary' : 'btn-outline'" class="px-6 py-2 rounded-full text-sm font-medium transition-all duration-300">{{ getCategoryLabel(category) }}</button>
+          </div>
+        </div> -->
+
+
+
+        <div class="skills-grid grid xs:grid-cols-3 md:grid-cols-5 lg:grid-cols-8 gap-6">
+          <div *ngFor="let skill of filteredSkills; let i = index" class="skill-card group" [attr.data-index]="i">
+            <img *ngIf="skill.svg" [src]="skill.svg" [alt]="skill.name + ' icon'" [title]="skill.name" class="grayscale group-hover:grayscale-0 transition duration-300 mb-8 mx-auto max-w-[100px]"/>
+          </div>
+        </div>
+
+
+        <!-- Skills Grid -->
+        <!-- <div class="skills-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div *ngFor="let skill of getFilteredSkills(); let i = index" class="skill-card group" [attr.data-index]="i">
+            
+            <div class="card p-6 text-center h-full relative overflow-hidden">
+              <div class="absolute inset-0 opacity-5 group-hover:opacity-10 transition-opacity duration-300">
+                <div class="w-full h-full bg-gradient-to-br from-primary-500 to-secondary-500"></div>
+              </div>
+              <div class="relative z-10">
+         
+                <span class="skill-name">{{ skill.name }}</span>
+                <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-primary-100 to-secondary-100 dark:from-primary-900 dark:to-secondary-900 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <svg class="w-8 h-8 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                  </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3">
+                  {{ skill.name }}
+                </h3>
+                <div class="mb-2">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-sm text-gray-600 dark:text-gray-400">Proficiency</span>
+                    <span class="text-sm font-medium text-gray-900 dark:text-white">{{ skill.proficiency }}%</span>
+                  </div>
+                  <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                    <div 
+                      class="skill-progress bg-gradient-to-r from-primary-500 to-secondary-500 h-2 rounded-full transition-all duration-1000"
+                      [style.width.%]="skill.proficiency"
+                      [attr.data-width]="skill.proficiency">
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <span 
+                    class="px-2 py-1 rounded-full text-xs font-medium"
+                    [class]="getCategoryStyle(skill.category)">
+                    {{ getCategoryLabel(skill.category) }}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>

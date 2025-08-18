@@ -1,0 +1,19 @@
+.education-card {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .education-card:nth-child(even) {
+      transform: translateY(30px) translateX(30px);
+    }
+
+    .education-card:nth-child(odd) {
+      transform: translateY(30px) translateX(-30px);
+    }
+
+    @media (max-width: 768px) {
+      .education-card:nth-child(even),
+      .education-card:nth-child(odd) {
+        transform: translateY(30px);
+      }
+    }

@@ -1,0 +1,19 @@
+.floating-badge {
+    animation: pulse-slow 3s ease-in-out infinite;
+}
+
+.about-card {
+    transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.stat-item {
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
