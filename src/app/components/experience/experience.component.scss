@@ -1,0 +1,23 @@
+.timeline-dot {
+      box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+    }
+
+    .experience-card {
+      // opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .experience-item:nth-child(even) .experience-card {
+      transform: translateY(30px) translateX(-30px);
+    }
+
+    .experience-item:nth-child(odd) .experience-card {
+      transform: translateY(30px) translateX(30px);
+    }
+
+    @media (max-width: 1024px) {
+      .experience-item:nth-child(even) .experience-card,
+      .experience-item:nth-child(odd) .experience-card {
+        transform: translateY(30px);
+      }
+    }

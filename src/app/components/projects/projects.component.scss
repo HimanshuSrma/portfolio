@@ -1,0 +1,8 @@
+.project-card {
+      opacity: 0;
+      transform: translateY(30px) scale(0.95);
+    }
+
+    .project-card:hover .card {
+      transform: translateY(-5px);
+    }

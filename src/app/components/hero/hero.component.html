@@ -1,0 +1,82 @@
+<!-- <section id="home" class="min-h-screen flex items-center gradient-bg relative overflow-hidden"> -->
+<section id="home" class="flex items-center gradient-bg relative overflow-hidden min-h-[400px] lg:min-h-screen pt-10 lg:pt-0">
+  <!-- Background Elements -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="floating-element absolute top-20 left-10 w-20 h-20 bg-primary-200 dark:bg-primary-800 rounded-full opacity-20"></div>
+    <div class="floating-element absolute top-40 right-20 w-16 h-16 bg-secondary-200 dark:bg-secondary-800 rounded-full opacity-20"></div>
+    <div class="floating-element absolute bottom-20 left-1/4 w-12 h-12 bg-accent-200 dark:bg-accent-800 rounded-full opacity-20"></div>
+  </div>
+
+  <div class="container-custom relative z-10">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- animate__backInLeft -->
+      <div class="space-y-6">
+        <div class="hero-badge inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+          <span class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
+          <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Available for work</span>
+        </div>
+
+        <div class="">
+          <h1 class="hero-title text-5xl lg:text-6xl font-display font-bold text-gray-900 dark:text-white leading-tight">Hi, I'm <span class="text-gradient">{{ personalInfo.name }}</span></h1>
+          <h2 class="hero-subtitle text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mt-4 font-medium">{{ personalInfo.title }}</h2>
+          <p class="hero-description text-lg text-gray-600 dark:text-gray-400 mt-6 leading-relaxed">{{ personalInfo.subtitle }}</p>
+        </div>
+
+        <div class="hero-buttons flex flex-col sm:flex-row gap-4 ">
+          <a href="#contact" class="btn-primary flex items-center">
+            <span>Get In Touch</span>
+            <svg class="w-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+          <a href="#projects" class="btn-outline">View My Work</a>
+        </div>
+
+        <!-- Social Links -->
+        <div class="hero-social flex items-center space-x-4 pt-4 ">
+          <span class="text-sm text-gray-500 dark:text-gray-400">Follow me:</span>
+          <!-- <a [href]="contact.github" target="_blank" class="social-link">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd" />
+            </svg>
+          </a> -->
+          <a [href]="contact.linkedin" target="_blank" class="social-link">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- Profile Image -->
+       <!-- animate__backInRight -->
+      <div class="hero-image flex justify-center lg:justify-end">
+        <div class="relative">
+          <div class="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-primary-400 to-secondary-400 p-1">
+            <div class="w-full h-full rounded-full overflow-hidden bg-white dark:bg-gray-800">
+              <img src="../../../assets/image/HimmanshuSharma.jpg" [alt]="personalInfo.name" class="w-full h-full object-cover"/>
+              <!-- <img src="../../../assets/image/HimmanshuSharma-blue.png" [alt]="personalInfo.name" class="w-full h-full object-none"/> -->
+            </div>
+          </div>
+          
+          <!-- Floating Badge -->
+          <div class="absolute -bottom-4 -right-4 bg-white dark:bg-gray-800 rounded-full p-4 shadow-lg border border-gray-200 dark:border-gray-700">
+            <div class="text-center">
+              <div class="text-2xl font-bold text-primary-600 dark:text-primary-400">4+</div>
+              <div class="text-xs text-gray-600 dark:text-gray-400">Years Exp</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+    <div class="flex flex-col items-center space-y-2">
+      <span class="text-sm text-gray-500 dark:text-gray-400">Scroll down</span>
+      <div class="w-6 h-10 border-2 border-gray-300 dark:border-gray-600 rounded-full flex justify-center">
+        <div class="w-1 h-3 bg-gray-400 dark:bg-gray-500 rounded-full mt-2 animate-bounce"></div>
+      </div>
+    </div>
+  </div>
+</section>
