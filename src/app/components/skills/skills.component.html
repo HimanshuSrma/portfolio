@@ -14,7 +14,7 @@
 
 
 
-        <div class="skills-grid grid xs:grid-cols-3 md:grid-cols-5 lg:grid-cols-8 gap-6">
+        <div class="skills-grid grid grid-cols-2 xs:grid-cols-3 md:grid-cols-5 lg:grid-cols-8 gap-6">
           <div *ngFor="let skill of filteredSkills; let i = index" class="skill-card group" [attr.data-index]="i">
             <img *ngIf="skill.svg" [src]="skill.svg" [alt]="skill.name + ' icon'" [title]="skill.name" class="grayscale group-hover:grayscale-0 transition duration-300 mb-8 mx-auto max-w-[100px]"/>
           </div>

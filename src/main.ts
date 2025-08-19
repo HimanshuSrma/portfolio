@@ -33,7 +33,7 @@ gsap.registerPlugin(ScrollTrigger);
     FooterComponent
   ],
   template: `
-    <div class="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+    <div class="w-100 overflow-x-hidden min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
       <app-header></app-header>
       <main>
         <app-hero></app-hero>
