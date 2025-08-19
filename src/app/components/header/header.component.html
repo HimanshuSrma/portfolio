@@ -47,13 +47,13 @@
         class="mobile-menu md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700"
         [class.active]="isMobileMenuOpen()">
         <ul class="py-4 space-y-2">
-          <li><a href="#home" class="block px-6 py-3 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200">Home</a></li>
-          <li><a href="#about" class="block px-6 py-3 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200">About</a></li>
-          <li><a href="#experience" class="block px-6 py-3 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200">Experience</a></li>
-          <li><a href="#education" class="block px-6 py-3 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200">Education</a></li>
-          <li><a href="#skills" class="block px-6 py-3 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200">Skills</a></li>
-          <li><a href="#projects" class="block px-6 py-3 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200">Projects</a></li>
-          <li><a href="#contact" class="block px-6 py-3 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200">Contact</a></li>
+          <li><a href="#home" (click)="toggleMobileMenu()" class="block px-6 py-3 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200">Home</a></li>
+          <li><a href="#about" (click)="toggleMobileMenu()" class="block px-6 py-3 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200">About</a></li>
+          <li><a href="#experience" (click)="toggleMobileMenu()" class="block px-6 py-3 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200">Experience</a></li>
+          <li><a href="#education" (click)="toggleMobileMenu()" class="block px-6 py-3 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200">Education</a></li>
+          <li><a href="#skills" (click)="toggleMobileMenu()" class="block px-6 py-3 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200">Skills</a></li>
+          <li><a href="#projects" (click)="toggleMobileMenu()" class="block px-6 py-3 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200">Projects</a></li>
+          <li><a href="#contact" (click)="toggleMobileMenu()" class="block px-6 py-3 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200">Contact</a></li>
         </ul>
       </div>
     </header>
