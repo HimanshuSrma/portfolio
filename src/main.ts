@@ -13,6 +13,7 @@ import { HeaderComponent } from './app/components/header/header.component';
 import { HeroComponent } from './app/components/hero/hero.component';
 import { ProjectsComponent } from './app/components/projects/projects.component';
 import { SkillsComponent } from './app/components/skills/skills.component';
+import { TestimonialsSectionComponent } from "./app/components/testimonial/testimonials.component";
 
 // Register GSAP plugins globally
 gsap.registerPlugin(ScrollTrigger);
@@ -30,8 +31,9 @@ gsap.registerPlugin(ScrollTrigger);
     SkillsComponent,
     ProjectsComponent,
     ContactComponent,
-    FooterComponent
-  ],
+    FooterComponent,
+    TestimonialsSectionComponent
+],
   template: `
     <div class="w-100 overflow-x-hidden min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
       <app-header></app-header>
@@ -42,6 +44,7 @@ gsap.registerPlugin(ScrollTrigger);
         <app-education></app-education>
         <app-skills></app-skills>
         <app-projects></app-projects>
+        <app-testimonials-section></app-testimonials-section>
         <app-contact></app-contact>
       </main>
       <app-footer></app-footer>

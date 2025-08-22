@@ -1,0 +1,8 @@
+.review-clamp {
+  // display: -webkit-box;
+  // -webkit-box-orient: vertical;
+  overflow-X: auto;
+//   overflow: hidden;
+  /* Tweak this to approximate ~100 words for your font/width */
+  // -webkit-line-clamp: 14; /* e.g., ~15–18 words/line → ~90–108 words */
+}
