@@ -268,7 +268,7 @@ export class PortfolioDataService {
     "id": "1",
     "title": "Order Management System (OMS)",
     "description": "Developed a high-performance e-commerce-style Order Management System for solar services, integrating AI-driven PDF parsing to reduce manual input and streamline order placement.",
-    "technologies": ["Angular", "Node.js", "Express", "MongoDB", "RxJS", "TypeScript", "Python", "TensorFlow"],
+    "technologies": ["Angular", "Angular Material", "TailwindCSS", "RxJS", "TypeScript", "SCSS", "Payment Gateway Integration"],
     "features": [
       "One-step order placement workflow",
       "AI-powered PDF parsing with auto-form population",
@@ -285,7 +285,7 @@ export class PortfolioDataService {
     "id": "2",
     "title": "Custom Web-based Drafting Tool",
     "description": "Developed a custom browser-based drafting tool to replace AutoCAD, enabling precise house layout creation with DXF parsing and Google Maps alignment for operational efficiency.",
-    "technologies": ["Angular", "Node.js", "Google Maps API", "DXF Parser", "TypeScript"],
+    "technologies": ["Angular", "Angular Material", "TailwindCSS", "RxJS", "TypeScript", "Google Maps API", "DXF Parser", "CometChat", "Moment.js", ],
     "features": [
       "DXF file parsing and visualization",
       "Seamless Google Maps integration for layout alignment",
@@ -301,7 +301,7 @@ export class PortfolioDataService {
     "id": "3",
     "title": "Tournament Management System",
     "description": "Engineered a full-fledged Tournament Management System for the European Table Tennis Union, enabling efficient player registration, live tracking, and multi-country support during large-scale tournaments.",
-    "technologies": ["Angular", "Angular Material", "PrimeNG", "RxJS", "TypeScript", "SCSS", "ngx-print"],
+    "technologies": ["Angular", "Angular Material", "PrimeNG", "RxJS", "TypeScript", "SCSS", "XLXS Services", "ngx-print"],
     "features": [
       "Real-time tournament tracking and live updates",
       "Player registration, invoicing, and management",
@@ -317,7 +317,7 @@ export class PortfolioDataService {
     "id": "4",
     "title": "WhatsApp Loyalty Program",
     "description": "Launched a WhatsApp-based loyalty program for Max Life Insurance, streamlining advisor engagement and providing a seamless reward management experience for 70,000+ users.",
-    "technologies": ["Angular", "Angular Material", "Bootstrap", "TypeScript"],
+    "technologies": ["Angular", "Angular Material", "RxJS", "TypeScript", "XLXS Services", "TCPDF", "Bootstrap", "SCSS"],
     "features": [
       "End-to-end WhatsApp integration for user interaction",
       "Automated loyalty points tracking and redemption",
@@ -333,7 +333,7 @@ export class PortfolioDataService {
     "id": "5",
     "title": "HR Engagement Platform",
     "description": "Designed and developed an HR engagement and recognition platform to drive employee motivation, featuring reward tracking, interactive dashboards, and real-time analytics.",
-    "technologies": ["Angular", "PrimeNG", "RxJS", "TypeScript", "JSON"],
+    "technologies": ["Angular", "Angular Material", "RxJS", "TypeScript", "XLXS Services", "TCPDF", "Bootstrap", "SCSS", "HTML"],
     "features": [
       "Employee engagement tracking and insights",
       "Reward and recognition workflows",
@@ -349,7 +349,7 @@ export class PortfolioDataService {
     "id": "6",
     "title": "Assessment Portal",
     "description": "Built a scalable interview and assessment management system with dedicated admin and user modules, enabling efficient scheduling, candidate evaluation, and real-time result generation.",
-    "technologies": ["Angular", "Node.js", "Express", "MongoDB", "RxJS", "TypeScript"],
+    "technologies": ["Angular", "Angular Material", "RxJS", "TypeScript", "Bootstrap", "SCSS", "HTML"],
     "features": [
       "Separate admin and candidate dashboards",
       "Question bank management with CRUD operations",
